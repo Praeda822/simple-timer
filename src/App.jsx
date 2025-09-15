@@ -4,6 +4,10 @@ const App = () => {
   const inputRef = useRef(null);
   const submit = () => {
     console.log(inputRef.current);
+    console.log(inputRef.current.value);
+    inputRef.current.style.backgroundColor = "red";
+    inputRef.current.style.color = "white";
+    inputRef.current.setAttribute("placeholder", "Updated...");
   };
 
   return (
