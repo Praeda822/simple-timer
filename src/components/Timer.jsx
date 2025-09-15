@@ -28,13 +28,12 @@ const Timer = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4">Timer</h2>
+    <div>
       <TimerDisplay time={time} />
       <TimerControls
         isRunning={isRunning}
-        toggleTimer={toggleTimer}
-        resetTimer={resetTimer}
+        onToggle={toggleTimer}
+        onReset={resetTimer}
       />
     </div>
   );
